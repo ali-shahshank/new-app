@@ -11,11 +11,17 @@ export default function Nav() {
   const pages = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Chat', href: '/chat' },
+    { name: 'Features', href: '/features' },
   ];
 
   return (
-    <AppBar sx={{ flexGrow: 1, position: 'relative' }}>
+    <AppBar
+      sx={{
+        flexGrow: 1,
+        position: 'relative',
+        boxShadow: 'none',
+      }}
+    >
       <Box
         sx={{
           m: 0,
@@ -24,6 +30,7 @@ export default function Nav() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          dropShadow: 'none',
         }}
       >
         <Typography
@@ -31,7 +38,7 @@ export default function Nav() {
           component="div"
           sx={{ color: 'var(--text-primary)' }}
         >
-          My App
+          LOGO
         </Typography>
         <Stack
           direction="row"
@@ -52,6 +59,7 @@ export default function Nav() {
         <Button
           variant="outlined"
           href="/chat"
+          sx={{ borderRadius: '24px' }}
         >
           START CHAT
         </Button>

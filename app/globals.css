@@ -10,7 +10,16 @@
   --background-secondary: #f7f7f7;
   --background-tertiary: #f0f0f0;
   --text-primary: #000000;
-  --text-secondary: #838383;
+  --text-secondary: #6C757D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300 !important;
 }
 
 /* @theme inline {
