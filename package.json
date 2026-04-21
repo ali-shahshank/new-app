@@ -9,11 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/groq": "^3.0.35",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@fontsource-variable/roboto": "^5.2.10",
     "@fontsource/roboto": "^5.2.10",
     "@mui/icons-material": "^9.0.0",
+    "ai": "^6.0.168",
     "firebase": "^12.12.1",
     "next": "16.2.4",
     "react": "19.2.4",
