@@ -4,16 +4,8 @@ import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
 
-const loading = () => {
+const loader = () => {
   const [loading, setLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <Box
@@ -32,4 +24,4 @@ const loading = () => {
   );
 };
 
-export default loading;
+export default loader;
