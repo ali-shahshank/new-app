@@ -10,7 +10,6 @@ import Nav from '../components/Nav';
 import { Suspense } from 'react';
 import Page from './page';
 import Loading from './loading';
-import NotFound from './not-found';
 
 const Layout = () => {
   return (

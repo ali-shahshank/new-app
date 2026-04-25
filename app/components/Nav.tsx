@@ -5,12 +5,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function Nav() {
   const pages = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Features', href: '/features' },
+    { name: 'Product', href: '/' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Resources', href: '/resources', icon: <ArrowDropDownIcon /> },
   ];
 
   return (
@@ -25,7 +26,7 @@ export default function Nav() {
         sx={{
           m: 0,
           p: 2,
-          bgcolor: 'var(--background-secondary)',
+          bgcolor: 'white',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -35,9 +36,9 @@ export default function Nav() {
         <Typography
           variant="h6"
           component="div"
-          sx={{ color: 'var(--text-primary)' }}
+          sx={{ color: 'var(--text-dark-primary)' }}
         >
-          LOGO
+          <Link href="/">LOGO</Link>
         </Typography>
         <Stack
           direction="row"
@@ -46,19 +47,39 @@ export default function Nav() {
         >
           {pages.map((page) => (
             <Button
+              variant="text"
               key={page.name}
               component={Link}
               href={page.href}
-              sx={{ color: 'var(--text-primary)' }}
+              sx={{
+                color: 'var(--text-dark-secondary)',
+                textTransform: 'none',
+                fontSize: '16px',
+                fontWeight: 400,
+                '&:hover': {
+                  color: '#000000',
+                  backgroundColor: 'var(--background-primary)',
+                },
+              }}
             >
               {page.name}
+              {page.icon}
             </Button>
           ))}
         </Stack>
         <Button
           variant="outlined"
           href="/chat"
-          sx={{ borderRadius: '24px' }}
+          sx={{
+            borderRadius: '24px',
+            color: 'black',
+            borderColor: 'black',
+            '&:hover': {
+              color: '#ffffff',
+              borderColor: '#000000',
+              backgroundColor: '#000000',
+            },
+          }}
         >
           START CHAT
         </Button>

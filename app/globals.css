@@ -6,11 +6,15 @@
 }
 
 :root {
-  --background-primary: #ffffff;
-  --background-secondary: #f7f7f7;
-  --background-tertiary: #f0f0f0;
-  --text-primary: #000000;
-  --text-secondary: #6C757D;
+  --background-primary: #f9f9f9;
+  --background-secondary: #212222;
+  --background-tertiary: #000000;
+  --text-dark-primary: #000000;
+  --text-dark-secondary: rgba(0, 0, 0, 0.7);
+  --text-dark-disabled: rgba(0, 0, 0, 0.38);
+  --text-light-primary: #ffffff;
+  --text-light-secondary: rgba(255, 255, 255, 0.7);
+  --text-light-disabled: rgba(255, 255, 255, 0.38);
 }
 
 h1,
