@@ -1,11 +1,11 @@
 'use client';
 import './globals.css';
-import Nav from './components/Nav';
+import Home from './home/page';
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <Nav />
+      <Home />
     </>
   );
 }
